@@ -11,7 +11,7 @@
             idx: Number
         },
         emits: [
-            "removeTask"
+            "remove-task"
         ]
     }
 </script>
@@ -20,9 +20,9 @@
     <!-- TODO: add your template code here --> 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Deadline {{task.deadline}}</h5>
+    <h5 class="card-title">Deadline: {{task.deadline}}</h5>
     <p class="card-text">{{ task.desc }}</p>
-    <button class="btn btn-primary" @click="$emit('removeTask', idx)">Done</button>
+    <button class="btn btn-primary" @click="$emit('remove-task', idx)">Done</button>
   </div>
 </div>
 
